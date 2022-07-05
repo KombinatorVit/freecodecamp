@@ -1,1 +1,6 @@
-const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
