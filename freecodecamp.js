@@ -1,2 +1,4 @@
-const myArray = [50, 60, 70];
-const myData = myArray[0];
+// Setup
+const myArray = [["John", 23], ["cat", 2]];
+myArray.push(["dog", 3]);
+// Only change code below this line
