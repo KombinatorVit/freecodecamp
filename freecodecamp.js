@@ -1,14 +1,15 @@
-function testLogicalAnd(val) {
+function testElse(val) {
+    let result = "";
     // Only change code below this line
   
-    
-      if (val <=50 && val >=25) {
-        return "Yes";
-      }
-    
+    if (val > 5) {
+      result = "Bigger than 5";
+    } else {
+      result = "5 or Smaller";
+    }
   
     // Only change code above this line
-    return "No";
+    return result;
   }
   
-  testLogicalAnd(10);
+  testElse(4);
