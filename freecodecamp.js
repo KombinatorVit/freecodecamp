@@ -1,22 +1,33 @@
 <style>
-  button {
-    border-radius: 5px;
-    color: white;
-    background-color: #0F5897;
-    padding: 5px 10px 8px 10px;
-  }
-  button:hover {
-    animation-name: background-color;
-    animation-duration: 500ms;
-    /* Only change code below this line */
-animation-fill-mode: forwards;
 
-    /* Only change code above this line */
+  #ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
-  @keyframes background-color {
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
     100% {
-      background-color: #4791d0;
+      top: 0px;
     }
   }
 </style>
-<button>Register</button>
+<div id="ball"></div>
