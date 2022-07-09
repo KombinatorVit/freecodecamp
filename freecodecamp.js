@@ -1,7 +1,14 @@
-function checkObj(obj, checkProp) {
-    if(obj.hasOwnProperty(checkProp)) {
-      return obj[checkProp];
-    } else {
-      return "Not Found";
+const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
     }
-  }
+  };
+  
+  const gloveBoxContents = myStorage.car.inside['glove box'];
+  
