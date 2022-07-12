@@ -52,21 +52,12 @@
   /* Custom styles */
   .flex-container {
     display: flex;
-    min-height: 100vh;
-    /* align-items: baseline;
-    flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   
   .flex-item {
-    /* width: 100px; */
-  }
-  
-  .item-2 {
-    font-size: 150px;
-  }
-  
-  .item-4 {
-    font-size: 100px;
+    /* width: 200px; */
   }
