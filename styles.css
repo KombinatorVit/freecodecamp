@@ -52,18 +52,32 @@
   /* Custom styles */
   .flex-container {
     display: flex;
+    height: 100vh;
   }
   
   .flex-item {
-    /* flex-basis: 300px;
-    flex-grow: 1; */
-    flex: 1 0 300px;
+    flex: 1;
   }
   
-  .item-2 {
-    flex-shrink: 2;
+  @media screen and (max-width: 650px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .item-2 {
+      order: -1;
+    }
   }
   
-  .item-3 {
-    flex-shrink: 3;
+  /* .item-1 {
+    order: 1;
   }
+  .item-7 {
+    order: -1;
+  }
+  .item-4 {
+    order: 2;
+  }
+  .item-5 {
+    order: 1;
+  } */
